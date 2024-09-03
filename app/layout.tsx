@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import type { Metadata } from "next";
 import { Inter, IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
@@ -8,11 +10,12 @@ const ibmPlexSerif = IBM_Plex_Serif({
   weight: ['400', '700'],
   variable: '--font-ibm-plex-serif'
 })
+
 export const metadata: Metadata = {
-  title: "KOBO",
-  description: "KOBO is a modern banking platform for the people",
+  title: "Horizon",
+  description: "Horizon is a modern banking platform for everyone.",
   icons: {
-    icon: '/icons/Logo.svg'
+    icon: '/icons/logo.svg'
   }
 };
 
