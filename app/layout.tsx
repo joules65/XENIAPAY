@@ -12,10 +12,10 @@ const ibmPlexSerif = IBM_Plex_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "Horizon",
-  description: "Horizon is a modern banking platform for everyone.",
+  title: "KOBO",
+  description: "KOBO is a cross payment platform wallet banking app.",
   icons: {
-    icon: '/icons/logo.svg'
+    icon: '/icons/Logo.svg'
   }
 };
 
