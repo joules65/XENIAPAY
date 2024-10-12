@@ -12,8 +12,8 @@ const ibmPlexSerif = IBM_Plex_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "KOBO",
-  description: "KOBO is a cross payment platform wallet banking app.",
+  title: "XeniaPay",
+  description: "XeniaPay is a cross payment platform wallet banking app.",
   icons: {
     icon: '/icons/Logo.svg'
   }

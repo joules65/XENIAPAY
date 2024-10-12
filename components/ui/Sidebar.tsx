@@ -5,6 +5,9 @@ import Image from 'next/image'
 import { sidebarLinks } from '@/constants'
 import { cn } from '@/lib/utils'
 import { usePathname } from 'next/navigation'
+import  Footer  from './Footer'
+import PlaidLink from '../PlaidLink'
+
 
 const Sidebar = ({ user }: SiderbarProps) => {
 const pathname = usePathname();
@@ -17,10 +20,10 @@ const pathname = usePathname();
                     src="/icons/Logo.svg"
                     width={34}
                     height={34}
-                    alt="KOBO logo"
+                    alt="XeniaPay logo"
                     className="size-[24px] max-xl:size-14"
                 />
-                <h1 className="sidebar-logo">KOBO</h1>
+                <h1 className="sidebar-logo">XeniaPay</h1>
             </Link>
 
             {sidebarLinks.map((item) =>
@@ -45,9 +48,10 @@ const pathname = usePathname();
             )
           })}
 
-          USER 
+          <PlaidLink user={user}/> 
         </nav>
-        FOOTER  
+
+        <Footer user={user} />  
     </section>
   )
 }
