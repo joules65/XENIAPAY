@@ -11,6 +11,7 @@ const Footer = ({ user, type = 'desktop' }: FooterProps) => {
 
     if(loggedOut) router.push('/sign-in')
   }
+
   return (
     <footer className="footer">
       <div className={type === 'mobile' ? 'footer_name-mobile' : 'footer_name'}>
@@ -20,15 +21,16 @@ const Footer = ({ user, type = 'desktop' }: FooterProps) => {
       </div>
 
       <div className={type === 'mobile' ? 'footer_email-mobile' : 'footer_email'}>
-        <h1 className="text-14 truncate font-normal text-gray-600">
-          {user.firstName}
-        </h1>
-        <p className="text-14 truncate font-normal text-gray-600">
-          {user.email}
-        </p>
+          <h1 className="text-14 truncate text-gray-700 font-semibold">
+            {user?.firstName}
+          </h1>
+          <p className="text-14 truncate font-normal text-gray-600">
+            {user?.email}
+          </p>
       </div>
-      <div className="footer_image">
-        <Image src="icons/logout.svg" fill alt="ebuka"/>
+
+      <div className="footer_image" onClick={handleLogOut}>
+        <Image src="icons/logout.svg" fill alt="ebuka" />
       </div>
     </footer>
   )
